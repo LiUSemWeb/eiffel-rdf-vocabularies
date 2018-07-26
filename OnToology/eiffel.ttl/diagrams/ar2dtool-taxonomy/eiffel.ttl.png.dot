@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "eiffel:TestCaseStartedEvent" "eiffel:ActivityStartedEvent" "eiffel:TestCaseFinishedEvent" "eiffel:ActivityFinishedEvent" "eiffel:TestCaseTriggeredEvent" "eiffel:ActivityTriggeredEvent" "eiffel:SourceChangeSubmittedEvent" "eiffel:ArtifactPublishedEvent" "eiffel:TestSuiteFinishedEvent" "eiffel:ArtifactCreatedEvent" "eiffel:Event" "eiffel:SourceChangeCreatedEvent" "eiffel:EnvironmentDefinedEvent" "eiffel:CompositionDefinedEvent" "eiffel:ConfidenceLevelModifiedEvent" "eiffel:TestSuiteStartedEvent" ; /*classes style*/
+	"eiffel:TestSuiteFinishedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:TestCaseStartedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:ArtifactPublishedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:ActivityFinishedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:SourceChangeSubmittedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:ActivityStartedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:CompositionDefinedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:EnvironmentDefinedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:TestSuiteStartedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:ActivityTriggeredEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:SourceChangeCreatedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:TestCaseFinishedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:ConfidenceLevelModifiedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:TestCaseTriggeredEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+	"eiffel:ArtifactCreatedEvent" -> "eiffel:Event" [ label = "rdfs:subClassOf" ];
+
+}

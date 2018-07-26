@@ -1,0 +1,541 @@
+<https://w3id.org/eiffel/RDFvocab/main#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eiffel/RDFvocab/main#> <http://purl.org/dc/terms/abstract> "This ontology introduces classes and properties that can be used to describe Eiffel events."@en .
+<https://w3id.org/eiffel/RDFvocab/main#> <http://purl.org/dc/terms/language> "en"^^<http://www.w3.org/2001/XMLSchema#language> .
+<https://w3id.org/eiffel/RDFvocab/main#> <http://purl.org/dc/terms/title> "Vocabulary for describing Eiffel events"@en .
+<https://w3id.org/eiffel/RDFvocab/main#> <http://www.w3.org/2000/01/rdf-schema#label> "Eiffel Event Event"@en .
+<https://w3id.org/eiffel/RDFvocab/main#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eiffel/RDFvocab/main#author
+<https://w3id.org/eiffel/RDFvocab/main#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#author> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#author> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Author> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#fileinfo
+<https://w3id.org/eiffel/RDFvocab/main#fileinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#fileinfo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#fileinfo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#FileInfo> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gav
+<https://w3id.org/eiffel/RDFvocab/main#gav> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#gav> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#gav> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Gav> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#git
+<https://w3id.org/eiffel/RDFvocab/main#git> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#git> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#git> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Git> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gitRepoName
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoName> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Change> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#location
+<https://w3id.org/eiffel/RDFvocab/main#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#location> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Location> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#submitter
+<https://w3id.org/eiffel/RDFvocab/main#submitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#submitter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#submitter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Submitter> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#testCase
+<https://w3id.org/eiffel/RDFvocab/main#testCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#testCase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#testCase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#TestCase> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eiffel/RDFvocab/main#artifactId
+<https://w3id.org/eiffel/RDFvocab/main#artifactId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#artifactId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Gav> .
+<https://w3id.org/eiffel/RDFvocab/main#artifactId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#artifactId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#artifactId> <http://www.w3.org/2000/01/rdf-schema#label> "artifactId"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#author
+<https://w3id.org/eiffel/RDFvocab/main#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#authorEmail
+<https://w3id.org/eiffel/RDFvocab/main#authorEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#authorEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Author> .
+<https://w3id.org/eiffel/RDFvocab/main#authorEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#authorEmail> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#authorEmail> <http://www.w3.org/2000/01/rdf-schema#label> "authorEmail"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#authorGroup
+<https://w3id.org/eiffel/RDFvocab/main#authorGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#authorGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Author> .
+<https://w3id.org/eiffel/RDFvocab/main#authorGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#authorGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#authorGroup> <http://www.w3.org/2000/01/rdf-schema#label> "authorGroup"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#authorId
+<https://w3id.org/eiffel/RDFvocab/main#authorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#authorId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Author> .
+<https://w3id.org/eiffel/RDFvocab/main#authorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#authorId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#authorId> <http://www.w3.org/2000/01/rdf-schema#label> "authorId"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#authorName
+<https://w3id.org/eiffel/RDFvocab/main#authorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#authorName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Author> .
+<https://w3id.org/eiffel/RDFvocab/main#authorName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#authorName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#authorName> <http://www.w3.org/2000/01/rdf-schema#label> "authorName"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#category
+<https://w3id.org/eiffel/RDFvocab/main#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#category> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#category> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#category> <http://www.w3.org/2000/01/rdf-schema#label> "category"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#changeDeletions
+<https://w3id.org/eiffel/RDFvocab/main#changeDeletions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#changeDeletions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Change> .
+<https://w3id.org/eiffel/RDFvocab/main#changeDeletions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#changeDeletions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#changeDeletions> <http://www.w3.org/2000/01/rdf-schema#label> "changeDeletions"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#changeFiles
+<https://w3id.org/eiffel/RDFvocab/main#changeFiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#changeFiles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Change> .
+<https://w3id.org/eiffel/RDFvocab/main#changeFiles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#changeFiles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#changeFiles> <http://www.w3.org/2000/01/rdf-schema#label> "changeFiles"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#changeInsertions
+<https://w3id.org/eiffel/RDFvocab/main#changeInsertions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#changeInsertions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Change> .
+<https://w3id.org/eiffel/RDFvocab/main#changeInsertions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#changeInsertions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#changeInsertions> <http://www.w3.org/2000/01/rdf-schema#label> "changeInsertions"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#classifier
+<https://w3id.org/eiffel/RDFvocab/main#classifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#classifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#FileInfo> .
+<https://w3id.org/eiffel/RDFvocab/main#classifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#classifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#classifier> <http://www.w3.org/2000/01/rdf-schema#label> "classifier"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#domain
+<https://w3id.org/eiffel/RDFvocab/main#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#domain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#domain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#domain> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#domain> <http://www.w3.org/2000/01/rdf-schema#label> "domain"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#eventVersion
+<https://w3id.org/eiffel/RDFvocab/main#eventVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#eventVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#eventVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#eventVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#eventVersion> <http://www.w3.org/2000/01/rdf-schema#label> "eventVersion"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#executionType
+<https://w3id.org/eiffel/RDFvocab/main#executionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#executionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#executionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#executionType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#executionType> <http://www.w3.org/2000/01/rdf-schema#label> "executionType"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#extension
+<https://w3id.org/eiffel/RDFvocab/main#extension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#extension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#FileInfo> .
+<https://w3id.org/eiffel/RDFvocab/main#extension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#extension> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#extension> <http://www.w3.org/2000/01/rdf-schema#label> "extension"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#fileinfo
+<https://w3id.org/eiffel/RDFvocab/main#fileinfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gav
+<https://w3id.org/eiffel/RDFvocab/main#gav> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gavVersion
+<https://w3id.org/eiffel/RDFvocab/main#gavVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#gavVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Gav> .
+<https://w3id.org/eiffel/RDFvocab/main#gavVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#gavVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#gavVersion> <http://www.w3.org/2000/01/rdf-schema#label> "gavVersion"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#git
+<https://w3id.org/eiffel/RDFvocab/main#git> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gitBranch
+<https://w3id.org/eiffel/RDFvocab/main#gitBranch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#gitBranch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Git> .
+<https://w3id.org/eiffel/RDFvocab/main#gitBranch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#gitBranch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#gitBranch> <http://www.w3.org/2000/01/rdf-schema#label> "gitBranch"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gitCommitId
+<https://w3id.org/eiffel/RDFvocab/main#gitCommitId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#gitCommitId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Git> .
+<https://w3id.org/eiffel/RDFvocab/main#gitCommitId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#gitCommitId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#gitCommitId> <http://www.w3.org/2000/01/rdf-schema#label> "gitCommitId"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gitRepoName
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#gitRepoURI
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoURI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Git> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoURI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoURI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoURI> <http://www.w3.org/2000/01/rdf-schema#label> "gitRepoURI"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#groupId
+<https://w3id.org/eiffel/RDFvocab/main#groupId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#groupId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Gav> .
+<https://w3id.org/eiffel/RDFvocab/main#groupId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#groupId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#groupId> <http://www.w3.org/2000/01/rdf-schema#label> "groupId"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#iteration
+<https://w3id.org/eiffel/RDFvocab/main#iteration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#iteration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#iteration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#iteration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#iteration> <http://www.w3.org/2000/01/rdf-schema#label> "iteration"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#location
+<https://w3id.org/eiffel/RDFvocab/main#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#locationType
+<https://w3id.org/eiffel/RDFvocab/main#locationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#locationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Location> .
+<https://w3id.org/eiffel/RDFvocab/main#locationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#locationType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#locationType> <http://www.w3.org/2000/01/rdf-schema#label> "locationType"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#locationURI
+<https://w3id.org/eiffel/RDFvocab/main#locationURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#locationURI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Location> .
+<https://w3id.org/eiffel/RDFvocab/main#locationURI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#locationURI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#locationURI> <http://www.w3.org/2000/01/rdf-schema#label> "locationURI"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#name
+<https://w3id.org/eiffel/RDFvocab/main#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion
+<https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion> <http://www.w3.org/2000/01/rdf-schema#label> "outcomeConclusion"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict
+<https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict> <http://www.w3.org/2000/01/rdf-schema#label> "outcomeVerdict"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#submitter
+<https://w3id.org/eiffel/RDFvocab/main#submitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#submitterEmail
+<https://w3id.org/eiffel/RDFvocab/main#submitterEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Submitter> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterEmail> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterEmail> <http://www.w3.org/2000/01/rdf-schema#label> "submitterEmail"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#submitterGroup
+<https://w3id.org/eiffel/RDFvocab/main#submitterGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Submitter> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterGroup> <http://www.w3.org/2000/01/rdf-schema#label> "submitterGroup"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#submitterId
+<https://w3id.org/eiffel/RDFvocab/main#submitterId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Submitter> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterId> <http://www.w3.org/2000/01/rdf-schema#label> "submitterId"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#submitterName
+<https://w3id.org/eiffel/RDFvocab/main#submitterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Submitter> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#submitterName> <http://www.w3.org/2000/01/rdf-schema#label> "submitterName"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#testCase
+<https://w3id.org/eiffel/RDFvocab/main#testCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#testCaseId
+<https://w3id.org/eiffel/RDFvocab/main#testCaseId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestCase> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseId> <http://www.w3.org/2000/01/rdf-schema#label> "testCaseId"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#testCaseTracker
+<https://w3id.org/eiffel/RDFvocab/main#testCaseTracker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseTracker> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestCase> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseTracker> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseTracker> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseTracker> <http://www.w3.org/2000/01/rdf-schema#label> "testCaseTracker"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#testCaseURI
+<https://w3id.org/eiffel/RDFvocab/main#testCaseURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseURI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestCase> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseURI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseURI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#testCaseURI> <http://www.w3.org/2000/01/rdf-schema#label> "testCaseURI"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#testSuiteType
+<https://w3id.org/eiffel/RDFvocab/main#testSuiteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#testSuiteType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#testSuiteType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#testSuiteType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#testSuiteType> <http://www.w3.org/2000/01/rdf-schema#label> "testSuiteType"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#time
+<https://w3id.org/eiffel/RDFvocab/main#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#time> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#time> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<https://w3id.org/eiffel/RDFvocab/main#time> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#time> <http://www.w3.org/2000/01/rdf-schema#label> "time"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#trigger
+<https://w3id.org/eiffel/RDFvocab/main#trigger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#trigger> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#trigger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#trigger> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#trigger> <http://www.w3.org/2000/01/rdf-schema#label> "trigger"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#value
+<https://w3id.org/eiffel/RDFvocab/main#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#value> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#value> <http://www.w3.org/2000/01/rdf-schema#label> "category"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#version
+<https://w3id.org/eiffel/RDFvocab/main#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/eiffel/RDFvocab/main#version> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/eiffel/RDFvocab/main#version> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#version> <http://www.w3.org/2000/01/rdf-schema#label> "version"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent
+<https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityFinishedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityFinishedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent
+<https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityStartedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityStartedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent
+<https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ActivityTriggeredEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityTriggeredEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ArtifactCreatedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelArtifactCreatedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ArtifactPublishedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelArtifactPublishedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Author
+<https://w3id.org/eiffel/RDFvocab/main#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Author> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Change
+<https://w3id.org/eiffel/RDFvocab/main#Change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Change> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Change> <http://www.w3.org/2000/01/rdf-schema#label> "Change"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent
+<https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "CompositionDefinedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelCompositionDefinedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent
+<https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ConfidenceLevelModifiedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelConfidenceLevelModifiedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent
+<https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "EnvironmentDefinedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelEnvironmentDefinedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Event
+<https://w3id.org/eiffel/RDFvocab/main#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a general class for all types of Eiffel events."@en .
+<https://w3id.org/eiffel/RDFvocab/main#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#FileInfo
+<https://w3id.org/eiffel/RDFvocab/main#FileInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#FileInfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#FileInfo> <http://www.w3.org/2000/01/rdf-schema#label> "FileInfo"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Gav
+<https://w3id.org/eiffel/RDFvocab/main#Gav> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Gav> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Gav> <http://www.w3.org/2000/01/rdf-schema#label> "Gav"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Git
+<https://w3id.org/eiffel/RDFvocab/main#Git> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Git> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Git> <http://www.w3.org/2000/01/rdf-schema#label> "Git"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Location
+<https://w3id.org/eiffel/RDFvocab/main#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SourceChangeCreatedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelSourceChangeCreatedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SourceChangeSubmittedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelSourceChangeSubmittedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Submitter
+<https://w3id.org/eiffel/RDFvocab/main#Submitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#Submitter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#Submitter> <http://www.w3.org/2000/01/rdf-schema#label> "Submitter"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestCase
+<https://w3id.org/eiffel/RDFvocab/main#TestCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCase> <http://www.w3.org/2000/01/rdf-schema#label> "Submitter"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TestCaseFinishedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseFinishedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TestCaseStartedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseStartedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TestCaseTriggeredEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseTriggeredEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TestSuiteFinishedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestSuiteFinishedEvent.md> .
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TestSuiteStartedEvent"@en .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestSuiteStartedEvent.md> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/eiffel/RDFvocab/main#author> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#author> <http://www.w3.org/2000/01/rdf-schema#label> "author"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#fileinfo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#fileinfo> <http://www.w3.org/2000/01/rdf-schema#label> "fileinfo"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#gav> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#gav> <http://www.w3.org/2000/01/rdf-schema#label> "gav"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#git> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#git> <http://www.w3.org/2000/01/rdf-schema#label> "git"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#gitRepoName> <http://www.w3.org/2000/01/rdf-schema#label> "gitRepoName"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#submitter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#submitter> <http://www.w3.org/2000/01/rdf-schema#label> "submitter"@en .
+# 
+<https://w3id.org/eiffel/RDFvocab/main#testCase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/main#> .
+<https://w3id.org/eiffel/RDFvocab/main#testCase> <http://www.w3.org/2000/01/rdf-schema#label> "testCase"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/eiffel/RDFvocab/main#"
+     xml:base="https://w3id.org/eiffel/RDFvocab/main"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/eiffel/RDFvocab/main#">
+        <terms:abstract xml:lang="en">This ontology introduces classes and properties that can be used to describe Eiffel events.</terms:abstract>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</terms:language>
+        <terms:title xml:lang="en">Vocabulary for describing Eiffel events</terms:title>
+        <rdfs:label xml:lang="en">Eiffel Event Event</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#author -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#author">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#fileinfo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#fileinfo">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#FileInfo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gav -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gav">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Gav"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#git -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#git">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Git"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gitRepoName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gitRepoName">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Change"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#location -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#location">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#submitter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitter">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Submitter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#testCase -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#testCase">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent"/>
+        <rdfs:range rdf:resource="https://w3id.org/eiffel/RDFvocab/main#TestCase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#artifactId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#artifactId">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Gav"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">artifactId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#author -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#author"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#authorEmail -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#authorEmail">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">authorEmail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#authorGroup -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#authorGroup">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">authorGroup</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#authorId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#authorId">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">authorId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#authorName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#authorName">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">authorName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#category -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#category">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#changeDeletions -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#changeDeletions">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Change"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">changeDeletions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#changeFiles -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#changeFiles">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Change"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">changeFiles</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#changeInsertions -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#changeInsertions">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Change"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">changeInsertions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#classifier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#classifier">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#FileInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">classifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#domain -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#domain">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">domain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#eventVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#eventVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">eventVersion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#executionType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#executionType">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">executionType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#extension -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#extension">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#FileInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">extension</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#fileinfo -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#fileinfo"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gav -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gav"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gavVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gavVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Gav"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">gavVersion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#git -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#git"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gitBranch -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gitBranch">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Git"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">gitBranch</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gitCommitId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gitCommitId">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Git"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">gitCommitId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gitRepoName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gitRepoName"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#gitRepoURI -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#gitRepoURI">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Git"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">gitRepoURI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#groupId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#groupId">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Gav"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">groupId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#iteration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#iteration">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">iteration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#location -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#location"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#locationType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#locationType">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">locationType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#locationURI -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#locationURI">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">locationURI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#name">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">outcomeConclusion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">outcomeVerdict</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#submitter -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitter"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#submitterEmail -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitterEmail">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Submitter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">submitterEmail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#submitterGroup -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitterGroup">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Submitter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">submitterGroup</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#submitterId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitterId">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Submitter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">submitterId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#submitterName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitterName">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Submitter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">submitterName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#testCase -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#testCase"/>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#testCaseId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#testCaseId">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#TestCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">testCaseId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#testCaseTracker -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#testCaseTracker">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#TestCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">testCaseTracker</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#testCaseURI -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#testCaseURI">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#TestCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">testCaseURI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#testSuiteType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#testSuiteType">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">testSuiteType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#time -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#time">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#trigger -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#trigger">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">trigger</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#value -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#value">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#version -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/eiffel/RDFvocab/main#version">
+        <rdfs:domain rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">ActivityFinishedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityFinishedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">ActivityStartedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityStartedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">ActivityTriggeredEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityTriggeredEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">ArtifactCreatedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelArtifactCreatedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">ArtifactPublishedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelArtifactPublishedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Author -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Author">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Author</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Change -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Change">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">CompositionDefinedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelCompositionDefinedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">ConfidenceLevelModifiedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelConfidenceLevelModifiedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">EnvironmentDefinedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelEnvironmentDefinedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Event -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Event">
+        <rdfs:comment xml:lang="en">This is a general class for all types of Eiffel events.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#FileInfo -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#FileInfo">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">FileInfo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Gav -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Gav">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Gav</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Git -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Git">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Git</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Location -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Location">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">SourceChangeCreatedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelSourceChangeCreatedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">SourceChangeSubmittedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelSourceChangeSubmittedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#Submitter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#Submitter">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Submitter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#TestCase -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#TestCase">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">Submitter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">TestCaseFinishedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseFinishedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">TestCaseStartedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseStartedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">TestCaseTriggeredEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseTriggeredEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">TestSuiteFinishedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestSuiteFinishedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eiffel/RDFvocab/main#Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">TestSuiteStartedEvent</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestSuiteStartedEvent.md"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#author">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">author</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#fileinfo">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">fileinfo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#gav">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">gav</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#git">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">git</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#gitRepoName">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">gitRepoName</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#location">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#submitter">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">submitter</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/eiffel/RDFvocab/main#testCase">
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/eiffel/RDFvocab/main#"/>
+        <rdfs:label xml:lang="en">testCase</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
