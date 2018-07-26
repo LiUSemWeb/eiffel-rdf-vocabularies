@@ -1,0 +1,501 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . # standard RDF namespace
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .       # standard RDFS namespace
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+
+@prefix eiffel:  <https://w3id.org/eiffel/RDFvocab/main#> .
+
+
+
+eiffel: rdf:type                    owl:Ontology ;
+        rdfs:label                  "Eiffel Event Event"@en ;
+        dcterms:abstract            "This ontology introduces classes and properties that can be used to describe Eiffel events."@en ;
+        rdfs:seeAlso                <https://github.com/Ericsson/eiffel> ;
+        dcterms:title               "Vocabulary for describing Eiffel Event"@en ;
+        dcterms:language            "en"^^xsd:language .
+
+##########################################################
+# Metadata properties
+##########################################################
+
+eiffel:version
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "version"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:domain
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "domain"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:iteration
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "iteration"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:time
+	rdf:time          owl:DatatypeProperty ;
+	rdfs:label        "time"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:long .
+
+##########################################################
+# data properties
+##########################################################
+
+eiffel:outcomeConclusion
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "outcomeConclusion"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:outcomeVerdict
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "outcomeVerdict"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:name
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "name"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+
+eiffel:executionType
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "executionType"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:ActivityTriggeredEvent ;
+	rdfs:range		  xsd:string .
+	
+eiffel:category
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "category"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:trigger
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "trigger"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:ActivityTriggeredEvent ;
+	rdfs:range		  xsd:string .
+	
+eiffel:gav
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gav"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  eiffel:Gav .
+	
+eiffel:Gav
+	rdf:type          owl:Class ;
+	rdfs:label        "Gav"@en ;
+	rdfs:isDefinedBy  eiffel: .
+	
+eiffel:groupId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "groupId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Gav ;
+	rdfs:range		  xsd:string .
+
+eiffel:artifactId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "artifactId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Gav ;
+	rdfs:range		  xsd:string .	
+	
+eiffel:gavVersion
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gavVersion"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Gav ;
+	rdfs:range		  xsd:string .
+	
+eiffel:fileinfo
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "fileinfo"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:ArtifactCreatedEvent ;
+	rdfs:range		  eiffel:FileInfo .
+	
+eiffel:FileInfo
+	rdf:type          owl:Class ;
+	rdfs:label        "FileInfo"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+
+eiffel:classifier
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "classifier"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:FileInfo ;
+	rdfs:range		  xsd:string .
+	
+eiffel:extension
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "extension"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:FileInfo ;
+	rdfs:range		  xsd:string .
+
+eiffel:location
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "location"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:ArtifactPublishedEvent ;
+	rdfs:range		  eiffel:Location .
+	
+eiffel:Location
+	rdf:type          owl:Class ;
+	rdfs:label        "Location"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+	
+eiffel:locationType
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "locationType"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Location ;
+	rdfs:range		  xsd:string .
+	
+eiffel:locationURI
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "locationURI"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Location ;
+	rdfs:range		  xsd:string .
+	
+eiffel:eventVersion
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "eventVersion"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:value
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "category"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  xsd:string .
+	
+eiffel:author
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "author"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:SourceChangeCreatedEvent ;
+	rdfs:range		  eiffel:Author .
+	
+eiffel:Author
+	rdf:type          owl:Class ;
+	rdfs:label        "Author"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+	
+eiffel:authorName
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "authorName"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Author ;
+	rdfs:range		  xsd:string .
+	
+eiffel:authorEmail
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "authorEmail"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Author ;
+	rdfs:range		  xsd:string .
+	
+eiffel:authorId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "authorId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Author ;
+	rdfs:range		  xsd:string .
+	
+eiffel:authorGroup
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "authorGroup"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Author ;
+	rdfs:range		  xsd:string .
+
+eiffel:git
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "git"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Event ;
+	rdfs:range		  eiffel:Git .
+
+eiffel:Git
+	rdf:type          owl:Class ;
+	rdfs:label        "Git"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+	
+eiffel:gitBranch
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gitBranch"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Git ;
+	rdfs:range		  xsd:string .
+	
+eiffel:gitCommitId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gitCommitId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Git ;
+	rdfs:range		  xsd:string .
+	
+eiffel:gitCommitId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gitCommitId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Git ;
+	rdfs:range		  xsd:string .
+	
+eiffel:gitRepoURI
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gitRepoURI"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Git ;
+	rdfs:range		  xsd:string .
+	
+eiffel:gitRepoName
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "gitRepoName"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:SourceChangeCreatedEvent ;
+	rdfs:range		  eiffel:Change .	
+	
+eiffel:Change
+	rdf:type          owl:Class ;
+	rdfs:label        "Change"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+	
+eiffel:changeInsertions
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "changeInsertions"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Change ;
+	rdfs:range		  xsd:string .
+	
+eiffel:changeDeletions
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "changeDeletions"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Change ;
+	rdfs:range		  xsd:string .
+	
+eiffel:changeFiles
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "changeFiles"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Change ;
+	rdfs:range		  xsd:string .
+	
+eiffel:submitter
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "submitter"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:SourceChangeSubmittedEvent ;
+	rdfs:range		  eiffel:Submitter .
+	
+eiffel:Submitter
+	rdf:type          owl:Class ;
+	rdfs:label        "Submitter"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+	
+eiffel:submitterName
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "submitterName"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Submitter ;
+	rdfs:range		  xsd:string .
+	
+eiffel:submitterEmail
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "submitterEmail"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Submitter ;
+	rdfs:range		  xsd:string .
+	
+eiffel:submitterId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "submitterId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Submitter ;
+	rdfs:range		  xsd:string .
+	
+eiffel:submitterGroup
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "submitterGroup"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:Submitter ;
+	rdfs:range		  xsd:string .
+	
+eiffel:testCase
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "testCase"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:TestCaseTriggeredEvent ;
+	rdfs:range		  eiffel:TestCase .
+	
+eiffel:TestCase
+	rdf:type          owl:Class ;
+	rdfs:label        "Submitter"@en ;
+	rdfs:isDefinedBy  eiffel: .	
+	
+eiffel:testCaseTracker
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "testCaseTracker"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:TestCase ;
+	rdfs:range		  xsd:string .
+	
+eiffel:testCaseId
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "testCaseId"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:TestCase ;
+	rdfs:range		  xsd:string .
+	
+eiffel:testCaseURI
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "testCaseURI"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:TestCase ;
+	rdfs:range		  xsd:string .
+	
+eiffel:testSuiteType
+	rdf:type          owl:DatatypeProperty ;
+	rdfs:label        "testSuiteType"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:domain		  eiffel:TestSuiteStartedEvent ;
+	rdfs:range		  xsd:string .
+
+##########################################################
+# Events
+##########################################################
+
+eiffel:Event
+	rdf:type          owl:Class ;
+	rdfs:label        "Event"@en ;
+	rdfs:isDefinedBy  eiffel: .
+
+eiffel:ActivityFinishedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "ActivityFinishedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityFinishedEvent.md> .
+	
+eiffel:ActivityStartedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "ActivityStartedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityStartedEvent.md> .
+	
+eiffel:ActivityTriggeredEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "ActivityTriggeredEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelActivityTriggeredEvent.md> .
+	
+eiffel:ArtifactCreatedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "ArtifactCreatedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelArtifactCreatedEvent.md> .
+	
+eiffel:ArtifactPublishedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "ArtifactPublishedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelArtifactPublishedEvent.md> .
+	
+eiffel:CompositionDefinedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "CompositionDefinedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelCompositionDefinedEvent.md> .
+	
+eiffel:ConfidenceLevelModifiedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "ConfidenceLevelModifiedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelConfidenceLevelModifiedEvent.md> .
+
+eiffel:EnvironmentDefinedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "EnvironmentDefinedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelEnvironmentDefinedEvent.md> .
+	
+eiffel:SourceChangeCreatedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "SourceChangeCreatedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelSourceChangeCreatedEvent.md> .
+	
+eiffel:SourceChangeSubmittedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "SourceChangeSubmittedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelSourceChangeSubmittedEvent.md> .
+	
+eiffel:TestCaseFinishedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "TestCaseFinishedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseFinishedEvent.md> .
+	
+eiffel:TestCaseStartedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "TestCaseStartedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseStartedEvent.md> .
+	
+eiffel:TestCaseTriggeredEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "TestCaseTriggeredEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestCaseTriggeredEvent.md> .
+	
+eiffel:TestSuiteFinishedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "TestSuiteFinishedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestSuiteFinishedEvent.md> .
+	
+eiffel:TestSuiteStartedEvent
+	rdf:type          owl:Class ;
+   rdfs:subClassOf   eiffel:Event ;
+	rdfs:label        "TestSuiteStartedEvent"@en ;
+	rdfs:isDefinedBy  eiffel: ;
+	rdfs:seeAlso      <https://github.com/Ericsson/eiffel/blob/master/eiffel-vocabulary/EiffelTestSuiteStartedEvent.md> .
