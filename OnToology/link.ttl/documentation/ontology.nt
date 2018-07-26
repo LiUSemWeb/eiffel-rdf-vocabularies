@@ -1,0 +1,161 @@
+<https://w3id.org/eiffel/RDFvocab/link#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/eiffel/RDFvocab/link#> <http://purl.org/dc/terms/abstract> "This ontology introduces properties that can be used to represent links between Eiffel events."@en .
+<https://w3id.org/eiffel/RDFvocab/link#> <http://purl.org/dc/terms/language> "en"^^<http://www.w3.org/2001/XMLSchema#language> .
+<https://w3id.org/eiffel/RDFvocab/link#> <http://purl.org/dc/terms/title> "Vocabulary for representing links between Eiffel events"@en .
+<https://w3id.org/eiffel/RDFvocab/link#> <http://www.w3.org/2000/01/rdf-schema#label> "Eiffel Event link"@en .
+<https://w3id.org/eiffel/RDFvocab/link#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Ericsson/eiffel> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eiffel/RDFvocab/link#activity_execution
+<https://w3id.org/eiffel/RDFvocab/link#activity_execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#activity_execution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/main#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#activity_execution> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#activity_execution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#activity_execution> <http://www.w3.org/2000/01/rdf-schema#label> "activity_execution"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#artifact
+<https://w3id.org/eiffel/RDFvocab/link#artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#artifact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#artifact> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#eiffelArtifactCreatedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#eiffelArtifactCreatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#artifact> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#artifact> <http://www.w3.org/2000/01/rdf-schema#label> "artifact"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#base
+<https://w3id.org/eiffel/RDFvocab/link#base> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#base> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#base> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#base> <http://www.w3.org/2000/01/rdf-schema#label> "base"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#cause
+<https://w3id.org/eiffel/RDFvocab/link#cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#cause> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#cause> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#cause> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#cause> <http://www.w3.org/2000/01/rdf-schema#label> "cause"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#change
+<https://w3id.org/eiffel/RDFvocab/link#change> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#change> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent> .
+<https://w3id.org/eiffel/RDFvocab/link#change> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#change> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#change> <http://www.w3.org/2000/01/rdf-schema#label> "change"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#composition
+<https://w3id.org/eiffel/RDFvocab/link#composition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#composition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#composition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#composition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#composition> <http://www.w3.org/2000/01/rdf-schema#label> "composition"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#context
+<https://w3id.org/eiffel/RDFvocab/link#context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#context> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#context> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#context> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#context> <http://www.w3.org/2000/01/rdf-schema#label> "context"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#element
+<https://w3id.org/eiffel/RDFvocab/link#element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#element> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent> .
+<https://w3id.org/eiffel/RDFvocab/link#element> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#element> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#element> <http://www.w3.org/2000/01/rdf-schema#label> "element"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#environment
+<https://w3id.org/eiffel/RDFvocab/link#environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#environment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#environment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#environment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#environment> <http://www.w3.org/2000/01/rdf-schema#label> "environment"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#iut
+<https://w3id.org/eiffel/RDFvocab/link#iut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#iut> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#iut> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#iut> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#iut> <http://www.w3.org/2000/01/rdf-schema#label> "iut"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#previous_version
+<https://w3id.org/eiffel/RDFvocab/link#previous_version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#previous_version> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#previous_version> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#previous_version> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#previous_version> <http://www.w3.org/2000/01/rdf-schema#label> "previous_version"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#subject
+<https://w3id.org/eiffel/RDFvocab/link#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#subject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#subject> <http://www.w3.org/2000/01/rdf-schema#label> "subject"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#test_case_execution
+<https://w3id.org/eiffel/RDFvocab/link#test_case_execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#test_case_execution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#Event> .
+<https://w3id.org/eiffel/RDFvocab/link#test_case_execution> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent> .
+<https://w3id.org/eiffel/RDFvocab/link#test_case_execution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#test_case_execution> <http://www.w3.org/2000/01/rdf-schema#label> "test_case_execution"@en .
+# 
+# https://w3id.org/eiffel/RDFvocab/link#test_suite_execution
+<https://w3id.org/eiffel/RDFvocab/link#test_suite_execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/eiffel/RDFvocab/link#test_suite_execution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#test_suite_execution> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> .
+<https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eiffel/RDFvocab/link#test_suite_execution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/eiffel/RDFvocab/link#> .
+<https://w3id.org/eiffel/RDFvocab/link#test_suite_execution> <http://www.w3.org/2000/01/rdf-schema#label> "test_suite_execution"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#Event
+# 
+# https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent
+# 
+# https://w3id.org/eiffel/RDFvocab/main#eiffelArtifactCreatedEvent
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
