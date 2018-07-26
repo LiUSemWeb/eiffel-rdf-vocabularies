@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"eiffellink:" -> "https://github.com/Ericsson/eiffel" [ label = "rdfs:seeAlso" ];
+	"eiffellink:base" -> "eiffel:SourceChangeCreatedEvent" [ label = "rdfs:Domain" ];
+	"eiffel:Event" -> "eiffel:TestCaseTriggeredEvent" [ label = "eiffellink:test_case_execution" ];
+	"eiffel:Event" -> "eiffel:ActivityTriggeredEvent" [ label = "eiffellink:activity_execution" ];
+	"eiffel:SourceChangeSubmittedEvent" -> "eiffel:SourceChangeCreatedEvent" [ label = "eiffellink:change" ];
+	"eiffel:TestCaseTriggeredEvent" -> "eiffel:Event" [ label = "eiffellink:iut" ];
+	"eiffel:Event" -> "eiffel:EnvironmentDefinedEvent" [ label = "eiffellink:environment" ];
+	"eiffel:Event" -> "eiffel:Event" [ label = "eiffellink:previous_version" ];
+	"owl:Thing" -> "eiffel:SourceChangeSubmittedEvent" [ label = "eiffellink:base" ];
+	"eiffel:ArtifactPublishedEvent" -> "eiffel:eiffelArtifactCreatedEvent" [ label = "eiffellink:artifact" ];
+	"eiffel:CompositionDefinedEvent" -> "eiffel:Event" [ label = "eiffellink:element" ];
+	"eiffel:ArtifactCreatedEvent" -> "eiffel:CompositionDefinedEvent" [ label = "eiffellink:composition" ];
+	"eiffel:Event" -> "eiffel:Event" [ label = "eiffellink:context" ];
+	"eiffel:Event" -> "eiffel:Event" [ label = "eiffellink:cause" ];
+	"eiffel:ConfidenceLevelModifiedEvent" -> "eiffel:Event" [ label = "eiffellink:subject" ];
+	"eiffel:TestSuiteFinishedEvent" -> "eiffel:TestSuiteStartedEvent" [ label = "eiffellink:test_suite_execution" ];
+
+}
