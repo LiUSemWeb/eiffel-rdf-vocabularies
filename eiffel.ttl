@@ -8,12 +8,11 @@
 @prefix eiffel:  <https://w3id.org/eiffel/RDFvocab/main#> .
 
 
-
 eiffel: rdf:type                    owl:Ontology ;
         rdfs:label                  "Eiffel Event Event"@en ;
         dcterms:abstract            "This ontology introduces classes and properties that can be used to describe Eiffel events."@en ;
         rdfs:seeAlso                <https://github.com/Ericsson/eiffel> ;
-        dcterms:title               "Vocabulary for describing Eiffel Event"@en ;
+        dcterms:title               "Vocabulary for describing Eiffel events"@en ;
         dcterms:language            "en"^^xsd:language .
 
 ##########################################################
@@ -393,6 +392,7 @@ eiffel:testSuiteType
 eiffel:Event
 	rdf:type          owl:Class ;
 	rdfs:label        "Event"@en ;
+	rdfs:comment      "This is a general class for all types of Eiffel events."@en ;
 	rdfs:isDefinedBy  eiffel: .
 
 eiffel:ActivityFinishedEvent
