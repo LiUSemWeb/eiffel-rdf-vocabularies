@@ -1,0 +1,105 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "SourceChangeSubmittedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent"
+    },
+    "previous_version" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#previous_version",
+      "@type" : "@id"
+    },
+    "iut" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#iut",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "activity_execution" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#activity_execution",
+      "@type" : "@id"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Event"
+    },
+    "EnvironmentDefinedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent"
+    },
+    "artifact" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#artifact",
+      "@type" : "@id"
+    },
+    "base" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#base",
+      "@type" : "@id"
+    },
+    "test_case_execution" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#test_case_execution",
+      "@type" : "@id"
+    },
+    "element" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#element",
+      "@type" : "@id"
+    },
+    "cause" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#cause",
+      "@type" : "@id"
+    },
+    "context" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#context",
+      "@type" : "@id"
+    },
+    "subject" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#subject",
+      "@type" : "@id"
+    },
+    "TestCaseTriggeredEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "composition" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#composition",
+      "@type" : "@id"
+    },
+    "ActivityTriggeredEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent"
+    },
+    "environment" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#environment",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "eiffelArtifactCreatedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#eiffelArtifactCreatedEvent"
+    },
+    "SourceChangeCreatedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent"
+    },
+    "TestSuiteStartedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent"
+    },
+    "test_suite_execution" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#test_suite_execution",
+      "@type" : "@id"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language"
+    },
+    "CompositionDefinedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent"
+    },
+    "change" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/link#change",
+      "@type" : "@id"
+    }
+  }
+}

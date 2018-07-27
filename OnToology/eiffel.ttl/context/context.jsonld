@@ -1,0 +1,269 @@
+{
+  "@context" : {
+    "groupId" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#groupId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "changeInsertions" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#changeInsertions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "executionType" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#executionType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SourceChangeSubmittedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#SourceChangeSubmittedEvent"
+    },
+    "gitBranch" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#gitBranch",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "testCaseId" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#testCaseId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "submitterId" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#submitterId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "TestCaseStartedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestCaseStartedEvent"
+    },
+    "author" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#author"
+    },
+    "TestSuiteFinishedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestSuiteFinishedEvent"
+    },
+    "fileinfo" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#fileinfo"
+    },
+    "ConfidenceLevelModifiedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ConfidenceLevelModifiedEvent"
+    },
+    "Location" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Location"
+    },
+    "locationURI" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#locationURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "submitterGroup" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#submitterGroup",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "outcomeVerdict" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#outcomeVerdict",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Event"
+    },
+    "authorGroup" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#authorGroup",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EnvironmentDefinedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#EnvironmentDefinedEvent"
+    },
+    "ArtifactPublishedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ArtifactPublishedEvent"
+    },
+    "authorEmail" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#authorEmail",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ActivityStartedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ActivityStartedEvent"
+    },
+    "gitRepoURI" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#gitRepoURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Submitter" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Submitter"
+    },
+    "ArtifactCreatedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ArtifactCreatedEvent"
+    },
+    "testCase" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#testCase"
+    },
+    "submitterName" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#submitterName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "gitRepoName" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#gitRepoName"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "testCaseTracker" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#testCaseTracker",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "extension" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#extension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "authorId" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#authorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "testCaseURI" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#testCaseURI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "value" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "location" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#location"
+    },
+    "iteration" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#iteration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "domain" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#domain",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "locationType" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#locationType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "time" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#time",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "TestCaseTriggeredEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestCaseTriggeredEvent"
+    },
+    "Change" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Change"
+    },
+    "submitterEmail" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#submitterEmail",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "git" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#git"
+    },
+    "changeFiles" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#changeFiles",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "ActivityTriggeredEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ActivityTriggeredEvent"
+    },
+    "TestCaseFinishedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestCaseFinishedEvent"
+    },
+    "gav" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#gav"
+    },
+    "version" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#version",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "eventVersion" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#eventVersion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Author" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Author"
+    },
+    "FileInfo" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#FileInfo"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "gitCommitId" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#gitCommitId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Git" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Git"
+    },
+    "submitter" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#submitter"
+    },
+    "changeDeletions" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#changeDeletions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "classifier" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#classifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SourceChangeCreatedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#SourceChangeCreatedEvent"
+    },
+    "TestSuiteStartedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestSuiteStartedEvent"
+    },
+    "category" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#category",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "testSuiteType" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#testSuiteType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Gav" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#Gav"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language"
+    },
+    "trigger" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#trigger",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "authorName" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#authorName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ActivityFinishedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#ActivityFinishedEvent"
+    },
+    "artifactId" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#artifactId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "outcomeConclusion" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#outcomeConclusion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "gavVersion" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#gavVersion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CompositionDefinedEvent" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#CompositionDefinedEvent"
+    },
+    "TestCase" : {
+      "@id" : "https://w3id.org/eiffel/RDFvocab/main#TestCase"
+    }
+  }
+}
